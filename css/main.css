@@ -1,5 +1,14 @@
-#canvas_output {
+body {
+  min-height: 100%;
+  width: 100%;
+  background-image: url("assets/street-bg.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
 
+#canvas_output {
+  margin: 0 auto;
 }
 #video {
   display: none;
