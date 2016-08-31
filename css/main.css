@@ -1,5 +1,9 @@
-body {
+html {
   height: 100%;
+}
+
+body {
+  min-height: 100%;
   width: 100%;
   background-image: url("../assets/street-bg.jpg");
   background-size: cover;
@@ -11,6 +15,7 @@ body {
   width: 100%;
   position: absolute;
   bottom: 0;
+  text-align: center;
 }
 #video {
   display: none;
