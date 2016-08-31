@@ -1,0 +1,13 @@
+#canvas_output {
+
+}
+#video {
+
+}
+#buffer {
+  display: none;
+}
+#output {
+  width: 1280px;
+  height: 720px;
+}
