@@ -35,10 +35,10 @@ body {
 #front-text {
   z-index: 20;
   position: absolute;
-  left: 30%;
+  left: 40%;
   bottom: 12%;
   animation-name: slideright;
-  animation-duration: 6s;
+  animation-duration: 4s;
   animation-direction: alternate;
   animation-iteration-count: infinite;
   font-size: 2em;
@@ -48,32 +48,33 @@ body {
 #back-text {
   z-index: 1;
   position: absolute;
-  right: 30%;
+  right: 40%;
   bottom: 20%;
   animation-name: slideleft;
-  animation-duration: 6s;
+  animation-duration: 4s;
   animation-direction: alternate;
   animation-iteration-count: infinite;
-  font-size: 2em;
+  font-size: 2.8em;
+  font-weight: bold;
   color: #fff;
 }
 
 @keyframes slideright {
   from {
-    left: 30%;
+    left: 40%;
   }
 
   to {
-    left: 70%;
+    left: 60%;
   }
 }
 
 @keyframes slideleft {
   from {
-    right: 30%;
+    right: 40%;
   }
 
   to {
-    right: 70%;
+    right: 60%;
   }
 }
