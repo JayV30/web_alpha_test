@@ -28,5 +28,52 @@ body {
   left: 0;
   right: 0;
   bottom: 10%;
-  margin: auto;
+  margin: 0 auto;
+  z-index: 10;
+}
+
+#front-text {
+  z-index: 20;
+  position: absolute;
+  left: 10%;
+  top: 50%;
+  animation-name: slideright;
+  animation-duration: 2s;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+  font-size: 2em;
+  color: #fff;
+}
+
+#back-text {
+  z-index: 1;
+  position: absolute;
+  right: 10%;
+  top: 70%;
+  animation-name: slideleft;
+  animation-duration: 2s;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+  font-size: 2em;
+  color: #fff;
+}
+
+@keyframes slideright {
+  from {
+    left: 10%;
+  }
+
+  to {
+    left: 90%;
+  }
+}
+
+@keyframes slideleft {
+  from {
+    right: 10%;
+  }
+
+  to {
+    right: 90%;
+  }
 }
