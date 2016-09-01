@@ -10,9 +10,11 @@
     if (paused) {
       paused = false;
       vid.play();
+      e.target.innerHTML("Pause");
     } else {
       paused = true;
       vid.pause();
+      e.target.innerHTML("Play");
     }
   });
 }());
