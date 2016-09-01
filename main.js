@@ -1,5 +1,20 @@
 (function() {
+  var vid = document.getElementById("video");
+  var playPauseBtn = document.getElementById("playPause");
+  var paused = false;
+
   seeThru.create('#video', {start: 'autoplay'});
+
+  playPauseBtn.addEventListener("click", function(e) {
+    console.log(e);
+    if (paused) {
+      paused = false;
+      vid.play();
+    } else {
+      paused = true;
+      vid.pause();
+    }
+  });
 }());
 
 
